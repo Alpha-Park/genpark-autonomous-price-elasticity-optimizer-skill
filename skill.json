@@ -1,0 +1,38 @@
+{
+  "name": "genpark-autonomous-price-elasticity-optimizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic price elasticity of demand calculator deriving marginal revenue maxima and automated algorithmic e-commerce repricing.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "pricing-intelligence",
+  "tags": [
+    "price-elasticity",
+    "dynamic-pricing",
+    "repricing-agent",
+    "revenue-maximization",
+    "ecommerce-math"
+  ],
+  "inputs": {
+    "current_price": {
+      "type": "number",
+      "default": 799.0
+    },
+    "marginal_cost": {
+      "type": "number",
+      "default": 450.0
+    }
+  },
+  "outputs": {
+    "recommended_optimal_price_usd": {
+      "type": "number"
+    },
+    "projected_weekly_profit_usd": {
+      "type": "number"
+    },
+    "verdict": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
